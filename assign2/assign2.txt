@@ -1,0 +1,14 @@
+Assignment 2
+1Download the example image (Balloon.tif) from this link. Write a program that is able to complete the following tasks:
+	read the image into workspace using function imread (10 points)
+	display the image using function imshow (10 points)
+	convert the color image into HSV color space and display each channel separately (10 points)
+	convert the color image into YCrCb color space and display each channel separately (10 points)
+	convert the color image into grayscale using function rgb2gray (10 points)
+	enlarge the grayscale image by four times using function imresize (10 points)
+	crop the enlarged image to its original size using function imcrop (10 points)
+	display the image size, average intensity, maximum and minimum intensity (20 points)
+	save the image into a file named "output.jpg" using function imwrite (10 points)
+2.Submit only the source code of your program.
+3.Within the program, use comment lines to describe how to execute the program to demonstrate the successful completion of the above actions.
+	Name your program as follows: "Assignment1_" followed by your first initial and last name then the extension name, e.g., for student John Franklin, name the file as Assignment1_JFranklin.m. Note: fail to follow the naming convention will result in a penalty of 10 points.

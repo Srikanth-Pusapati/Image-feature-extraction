@@ -1,0 +1,28 @@
+develope a chain code function that take 4-direction neighborhood
+  1.  What should be used as the input for this function? For example, a grayscale image or maybe even a simple edge map image where possible values are only black or white?
+The input can be either a grayscale image or an edge map. Either way, a description must be included so that what this function performs is clear. It is recommended to have an edge map as input. 
+
+  2.  I assume that as the algorithm checks neighboring pixels, a "correct" continuation would imply that the value of the neighbor pixel is the same as the current pixel? What if the input is supposed to be a grayscale image, as the likelihood of neighboring pixels having identical values is quite low?
+In a binary image (e.g. , an edge map), the connection of a 4-direction is the existence of the same binary value in one of the four neighboring pixels. If grayscale is used, either edge detection or a binarization is performed. The shape is in the context of edge map or a binary image. Do not extend it to any inputs.  
+  3.  Should this algorithm also determine where the top-left corner of a shape is, or can the coordinates of such a point on a shape be given into the function as parameters?
+when there is no clear top-left, top takes priority. with normalization and computing differential code, starting point is no longer a problem. No need to provide the starting point as an input to the function. 
+
+
+
+implement a fourier descriptor function
+  1.  Could I get an explanation of what exactly the fourier descriptor represents? For example, I do not understand what the variables in the formula represent, as they just use various letters and do not explain what those letters represent as variables. What is "s(k)" as mentioned in the slides? What is "a(u)"? What are j, N, and u? The slides also mention that it is related to a fourier transform -- can I just call fft in MATLAB and then do something with the coefficients to come up with a fourier descriptor? I am quite lost on this one.
+fourier descriptor treats the object boundary coordinates as the input signal and map it to the frequency space to get coeffieicents, which are used to represent shapes. Take a square and a circle as examples, the coordinates of the boundary pixels are differ greatly. Those of a circle appear more like a sinusoid function if we look at x (or y) only. 
+You can use fft function in MATLAB to do fourier transform. then select the most significant coefficients (large magnitude) as outputs. 
+
+
+write a script program to test the chain code functions and fourier decriptor function using circles and rectangles
+  1.  How should this be tested? Am I supposed to make my own image (or generate one via MATLAB)? Can only one shape appear per image that I use for testing? What is defined as successful? Should both chain code and fourier descriptor functions be run and the resulting output be displayed in the command window/console area at the bottom of the MATLAB screen?
+you can either use a matlab script to generate a circle/rectangle or use an image. Be aware that an image may appear as black and white but its pixels values could vary due to quantization errors. So, before you use one, make sure you apply thresholding. 
+Each input contains only one object (a circle or a rectangle). 
+for chair code, a sequence of numbers that correctly represent the contour of an object is considered as successful. for fourier descriptor, the selected coefficients that correctly represent the 'rough' shape of the object is considered as successful.
+a command window output will be acceptable for the testing script. 
+
+
+  2.  Must each function be saved in its own file or can I put all functions plus the testing script into one file? If multiple files are required, is submission of a ZIP file containing the respective .m files acceptable?
+It is preferred to have one script file but as many function programs as needed. The script will separate different testing cases. A zip file of all source codes is strongly recommended. 
+

@@ -1,0 +1,11 @@
+Assignment 6
+Write programs that are able to complete the following tasks:
+develope a chain code function that take 4-direction neighborhood. (20 points)
+develope a normalized chain code function (15 points)
+develope a differential chain code function (15 points)
+implement a fourier descriptor function (25 points)
+write a script program to test the chain code functions and fourier decriptor function using circles and rectangles. (25)
+implement shape distribution function (20 bonus points)
+Submit only the source code of your program.
+Within the program, use comment lines to describe how to execute the program to demonstrate the successful completion of the above actions.
+Name your program as follows: "Assignment6_" followed by the function name, your first initial and last name then the extension name, e.g., for student John Franklin, name the file as Assignment6_ChainCode_JFranklin.m. Note: fail to follow the naming convention will result in a penalty of 10 points.

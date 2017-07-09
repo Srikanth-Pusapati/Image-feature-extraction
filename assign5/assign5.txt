@@ -1,0 +1,8 @@
+Load image 'Balloon.tif' and convert it into a grayscale image, denoted with 'img1'
+Apply Fourier transform to img1 using MATLAB buildin function fft (and fftshift) and display the amplitude and phase matrices using abs and angle functions (20 points)
+Create a Gaussian lowpass filter and apply it to the Fourier coefficients of img1. (10 points)
+Perform inverse Fourier transform using ifft to recover the filtered image and display it to screen (10 points)
+Create a Gaussian highpass filter and apply it to the Fourier coefficients of img1. Using inverse Fourier transform to recover the filtered image and display it to screen (15 points)
+Decompose the original img1 with wavelet transform. Display the wavelet coefficients as an image. Note: you will need to rescale the values to be in the range of [0 255]; otherwise, the image appears black. (20 points)
+Reconstruct the edge map from the detail subbands. Hint: set the approximation subband to zero. Save the reconstructed edge map into an image. (15 points)
+Compute the energy, entropy, and homogeneity features for both processed edge maps and calculated the differences. (10 points)

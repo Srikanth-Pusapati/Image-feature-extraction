@@ -1,0 +1,11 @@
+1. Download the example images Balloon.tif and LenaGray.tif. Write a program that is able to complete the following tasks:
+	. read the images into workspace using function imread (5 points)
+	. use MATLAB buildin function histeq as the starting point, write a function to achieve histogram matching (50 points)
+	. The function takes two input grayscale images (iMat1 and iMat2) and use the histogram of iMat1 as the reference to change the histogram of iMat2 so that the histogram of iMat2 after histogram matching closely (statistically) follows that of iMat2. 
+	. Include a call to color conversion function at the start of the histogram matching function so that the function can still work if color images are used as inputs.
+	. save the histogram matched image into a file named "output1.jpg" using function imwrite (10 points)
+	. use MATLAB buildin function hough as the starting point, write a function to detect circles of a specified radius (30 points)
+	. save the histogram matched image into a file named "output2.jpg" using function imwrite (5 points)
+2. Submit only the source code of your program.
+2. Within the program, use comment lines to describe how to execute the program to demonstrate the successful completion of the above actions.
+Name your program as follows: "Assignment2_" followed by your first initial and last name then the extension name, e.g., for student John Franklin, name the file as Assignment2_JFranklin.m. Note: fail to follow the naming convention will result in a penalty of 10 points.
